@@ -18,11 +18,10 @@ $ cd /root/shad0w
 
 $ sudo install.sh
 
-
-
 See the wiki for installation and usage instructions.
 
-Main features of SHAD0W C2:
+
+# Main features of SHAD0W C2:
 - **Built for Docker** - Runs fully inside of Docker allowing cross platform usage
 - **Extremely modular** - Easy to create new modules to interact and task beacons
 - **HTTPS C2 communication** - All traffic between beacons and the C2 are encrypted and transmitted over HTTPS
