@@ -2,10 +2,6 @@
 
 # SHAD0W
 
-<p align="center">
-  <img alt="shad0w logo" src="shad0w.png" />
-</p>
-
 SHAD0W is a modular C2 framework designed to successfully operate on mature environments.
 
 It uses a range of methods to evade EDR and AV while allowing the operator to continue using tooling and tradecraft they are familiar with. Its powered by Python 3.8 and C, and uses [Donut](https://github.com/TheWover/donut) for payload generation. By using Donut along with the process injection capabilities of SHAD0W, it provides the operator the ability to execute .NET assemblies, DLLs, EXEs, JS, VBS or XSLs fully inside memory. Dynamically resolved syscalls are heavily used to avoid userland API hooking, anti DLL injection to make it harder for EDR to load code into the beacons and offical Microsoft mitigation methods to protect spawn processes.
