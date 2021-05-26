@@ -167,7 +167,7 @@ def make_in_clone(arch=None, platform=None, secure=None, static=None, builddir=N
     return True
 
 
-def extract_shellcode(beacon_file="/root/shad0w/beacon/beacon.exe", want_base64=False, donut=True, srdi=False):
+def extract_shellcode(beacon_file="/root/shad0w/beacon/beacon.exe", want_base64=False, donut=False, srdi=True):
     # use Donut or srdi to extract the shellcode from our newly created beacon
 
     if donut and not srdi:
@@ -199,7 +199,7 @@ def extract_shellcode(beacon_file="/root/shad0w/beacon/beacon.exe", want_base64=
     return code
 
 
-def write_and_bridge(filename, rcode, noremove=False):
+def write_and_bridge(filename, rcode, noremove=True):
     # write the supplied code to the file given
     # by the user and then make sure they can access it
 
