@@ -6,6 +6,20 @@ SHAD0W is a modular C2 framework designed to successfully operate on mature envi
 
 It uses a range of methods to evade EDR and AV while allowing the operator to continue using tooling and tradecraft they are familiar with. Its powered by Python 3.8 and C, and uses [Donut](https://github.com/TheWover/donut) for payload generation. By using Donut along with the process injection capabilities of SHAD0W, it provides the operator the ability to execute .NET assemblies, DLLs, EXEs, JS, VBS or XSLs fully inside memory. Dynamically resolved syscalls are heavily used to avoid userland API hooking, anti DLL injection to make it harder for EDR to load code into the beacons and offical Microsoft mitigation methods to protect spawn processes.
 
+# INSTALLATION
+
+shad0w is designed to be run inside docker, this is to make life easier for the operator as it has some very specific dependencies which are required for it to work correctly. Installation is very simple, just requiring the two commands shown below.
+
+$ git clone https://github.com/Tru5tNo1/shad0w.git
+
+$ sudo cp -r shad0w /root/shad0w
+
+$ cd /root/shad0w
+
+$ sudo install.sh
+
+
+
 See the wiki for installation and usage instructions.
 
 Main features of SHAD0W C2:
